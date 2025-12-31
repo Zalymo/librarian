@@ -1,0 +1,12 @@
+/node_modules
+/out
+/include
+*.tsbuildinfo
+.env
+*.txt
+.vscode/
+Packages/
+*.py
+test-runner-scripts/
+bin/
+sourcemap.json

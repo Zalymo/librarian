@@ -1,0 +1,32 @@
+{
+	"name": "LibrarianTests",
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			
+			"Packages": {
+				"$path": "Packages",
+
+				"Librarian": {
+					"$className": "Folder",
+
+					"out": {
+						"$path": "out"
+					}
+				}
+			}
+		},
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"$properties": {
+				"LoadStringEnabled": true
+			},
+
+			"RunTests": {
+				"$path": "test-runner-scripts"
+			}
+		}
+	}
+}
+

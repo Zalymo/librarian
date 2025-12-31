@@ -1,0 +1,21 @@
+{
+    "name": "librarian",
+    "tree": {
+        "$className": "DataModel",
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+
+            "Packages": {
+				"$path": "Packages",
+
+				"Librarian": {
+					"$className": "Folder",
+
+					"out": {
+						"$path": "src"
+					}
+				}
+			}
+        }
+    }
+}
