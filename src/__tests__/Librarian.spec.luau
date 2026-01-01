@@ -45,32 +45,32 @@ describe("Librarian", function()
 	describe("getValue", function()
 		it("should return value at simple path", function()
 			local dict = { name = "test" }
-			local result = getValue(dict, "name")
-			local value, key = result[1], result[2]
+			local result1, result2 = getValue(dict, "name")
+			local value, key = result1, result2
 			expect(value).toBe("test")
 			expect(key).toBe("name")
 		end)
 
 		it("should return nested table without key", function()
 			local dict = { nested = { inner = "value" } }
-			local result = getValue(dict, "nested")
-			local value, key = result[1], result[2]
+			local result1, result2 = getValue(dict, "nested")
+			local value, key = result1, result2
 			expect(value).toBe(dict.nested)
 			expect(key).toBeNil()
 		end)
 
 		it("should traverse nested paths", function()
 			local dict = { level1 = { level2 = { level3 = "deep" } } }
-			local result = getValue(dict, "level1.level2.level3")
-			local value, key = result[1], result[2]
+			local result1, result2 = getValue(dict, "level1.level2.level3")
+			local value, key = result1, result2
 			expect(value).toBe("deep")
 			expect(key).toBe("level3")
 		end)
 
 		it("should return nil for non-existent path", function()
 			local dict = { name = "test" }
-			local result = getValue(dict, "nonexistent")
-			local value, key = result[1], result[2]
+			local result1, result2 = getValue(dict, "nonexistent")
+			local value, key = result1, result2
 			expect(value).toBeNil()
 			expect(key).toBe(nil)
 		end)

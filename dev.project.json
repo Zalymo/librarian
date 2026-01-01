@@ -6,7 +6,7 @@
             "$className": "ReplicatedStorage",
 
             "Packages": {
-				"$path": "Packages",
+				"$path": "DevPackages",
 
 				"Librarian": {
 					"$className": "Folder",

@@ -1,6 +1,6 @@
-local types = require(script.Parent.Types)
+local types = require(script.Parent.types)
 
-local function getValue(dictionary: types.Environment, path: string): types.ContentDescriptor
+local function getValue(dictionary: types.Environment, path: string): (unknown, string?)
 	local keys: { string } = string.split(path, ".")
 
 	for index = 1, #keys do
@@ -10,10 +10,10 @@ local function getValue(dictionary: types.Environment, path: string): types.Cont
 
 		if index == #keys then
 			if currentType == "table" then
-				return { current, nil }
+				return current, nil
 			else
 				if currentType ~= "nil" and current ~= nil then
-					return { current, key }
+					return current, key
 				end
 			end
 		else
@@ -23,7 +23,7 @@ local function getValue(dictionary: types.Environment, path: string): types.Cont
 		end
 	end
 
-	return { nil, nil }
+	return nil, nil
 end
 
 return getValue

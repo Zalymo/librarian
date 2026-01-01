@@ -3,11 +3,6 @@
 registry = "test"
 
 [[package]]
-name = "jalymo/librarian"
-version = "0.1.0"
-dependencies = [["Jest", "jsdotlua/jest@3.10.0"], ["JestGlobals", "jsdotlua/jest-globals@3.10.0"]]
-
-[[package]]
 name = "jsdotlua/boolean"
 version = "1.2.7"
 dependencies = [["number", "jsdotlua/number@1.2.7"]]
@@ -246,3 +241,8 @@ dependencies = [["luau-polyfill", "jsdotlua/luau-polyfill@1.2.7"], ["promise", "
 name = "jsdotlua/timers"
 version = "1.2.7"
 dependencies = [["collections", "jsdotlua/collections@1.2.7"]]
+
+[[package]]
+name = "zalymo/librarian"
+version = "0.1.0"
+dependencies = [["Jest", "jsdotlua/jest@3.10.0"], ["JestGlobals", "jsdotlua/jest-globals@3.10.0"]]

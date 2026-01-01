@@ -1,9 +1,19 @@
 [package]
-name = "jalymo/librarian"
+name = "zalymo/librarian"
 version = "0.1.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
+exclude = [
+	"node_modules",
+	"DevPackages",
+	"sourcemap.json",
+	"bin",
+	"include",
+	"out",
+	"package-lock.json",
+	"test-runner-scripts",
+]
 
-[dependencies]
+[dev-dependencies]
 Jest = "jsdotlua/jest@3.10.0"
 JestGlobals = "jsdotlua/jest-globals@3.10.0"

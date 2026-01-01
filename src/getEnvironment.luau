@@ -1,4 +1,4 @@
-local types = require(script.Parent.Types)
+local types = require(script.Parent.types)
 
 local function getEnvironment(dictionary: types.Environment, path: string): types.Environment?
 	local keys: { string } = string.split(path, ".")
