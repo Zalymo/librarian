@@ -1,6 +1,6 @@
 [package]
 name = "zalymo/librarian"
-version = "0.1.0"
+version = "0.1.2"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 exclude = [
@@ -12,6 +12,8 @@ exclude = [
 	"out",
 	"package-lock.json",
 	"test-runner-scripts",
+	"dev.project.json",
+	"test.project.json",
 ]
 
 [dev-dependencies]
